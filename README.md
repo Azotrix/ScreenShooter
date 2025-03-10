@@ -4,7 +4,7 @@ A simple screen shooter application that captures screenshots for use in documen
 Prequisites
 -------------
 The program uses the libraries specified in the `requirements.txt` file.
-You can install this file using the following terminal command:
+You can install them using the following terminal command:
 ```
 pip install -r requirements.txt
 ```
@@ -12,11 +12,12 @@ pip install -r requirements.txt
 Usage
 -----
 When launching the program, it creates a `screenshots/` folder in the directory of execution, where screenshots are stored for saving into a Word document.
+
 The program works with the following hotkeys:
 
 | Hotkey | Event | Comment |
 |--------|-------|---------|
-| Alt+0 | Capturing all monitors | If more monitors present, their screen is combined into a single PNG image |
+| Alt+0 | Capturing all monitors | If more monitors are present, their screen is combined into a single PNG image |
 | Alt+1 | Capturing monitor 1 | |
 | Alt+2 | Capturing monitor 2 | |
 | Alt+3 | Capturing monitor 3 | |
@@ -24,10 +25,9 @@ The program works with the following hotkeys:
 | Alt+F12 | Exiting application | The user gets promted whether to delete screenshots |
 
 
-Create a .exe executable
+Create an .exe executable
 -----
-If you would like to create an EXE that you can run on Windows / Unix system, you need `pyinstaller`.
-Install it (or comment out the lines for `pyinstaller` in `requirements.txt` and then install from requirements again), with:
+If you would like to create an .exe that you can run on Windows, you need `pyinstaller`. Install it with:
 ```
 pip install pyinstaller
 ```
@@ -39,5 +39,4 @@ pyinstaller --onefile .\screenShooter.py
 
 Remarks
 -----------
-The code might not work on all systems, and you may need to modify it to your needs.
-The program was tested on Windows 10 and Windows 11 systems.
+The code might not work on all systems, and you may need to modify it to your needs. The program was tested on Windows 10 and Windows 11 systems.
